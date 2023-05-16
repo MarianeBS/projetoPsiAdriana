@@ -1,0 +1,692 @@
+.portfolio{
+    background-color: #FAF2F7;
+  }
+  
+  .portfolio #portfolio-flters {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 0 10px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio #portfolio-flters li::before {
+    content: "[";
+    margin-right: 0px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio #portfolio-flters li::after {
+    content: "]";
+    margin-left: 0px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio #portfolio-flters li:hover,
+  .portfolio #portfolio-flters li.filter-active {
+    color: #ED4442;
+  }
+  
+  .portfolio #portfolio-flters li.filter-active::before,
+  .portfolio #portfolio-flters li.filter-active::after {
+    color: #ED4442;
+  }
+  
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio .portfolio-item .portfolio-img {
+    overflow: hidden;
+  }
+  
+  .portfolio .portfolio-item .portfolio-img img {
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    z-index: 3;
+    right: 15px;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info .preview-link,
+  .portfolio .portfolio-item .portfolio-info .details-link {
+    position: absolute;
+    right: 40px;
+    font-size: 24px;
+    top: calc(50% - 18px);
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info .preview-link:hover,
+  .portfolio .portfolio-item .portfolio-info .details-link:hover {
+    color: #ED4442;
+  }
+  
+  .portfolio .portfolio-item .portfolio-info .details-link {
+    right: 10px;
+  }
+  
+  .portfolio .portfolio-item .portfolio-links {
+    opacity: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .portfolio .portfolio-item .portfolio-links a {
+    color: #fff;
+    margin: 0 2px;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-item .portfolio-links a:hover {
+    color: #ED4442;
+  }
+  
+  .portfolio .portfolio-item:hover .portfolio-img img {
+    transform: scale(1.2);
+  }
+  
+  .portfolio .portfolio-item:hover .portfolio-info {
+    opacity: 1;
+  }
+
+/*Responsividade dos cards*/
+.card-res{
+    margin-left: 0%; 
+    margin-bottom: 50px;
+}
+.aaa{
+    width: 25rem;
+}
+
+@media (max-width: 990px) {
+    .card-res {
+    margin-left: 5%; 
+    margin-bottom: 50px;
+    }
+    .aaa{
+        width: 40rem;
+    }
+}
+ 
+/*Links do Nav:*/
+.link-nav {  
+    font-weight: bold;
+    font-size: 23px;
+    color: black;
+    padding: 1px 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*Hover dos links do Nav:*/
+.nav-link:hover{
+    font-weight: bold;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-filter: drop-shadow(7px 10px 5px rgba(127, 126, 126, 0.5));
+    filter: drop-shadow(7px 10px 5px rgba(111, 111, 111, 0.5));
+}
+
+/*Espaçamento entre os links do Nav:*/
+.space-link {
+    padding-left: 100px;
+}
+
+/*Linha de corte <hr> estilizada:*/
+.line {
+    background-color: #ffb6c1;
+    color: #ffb6c1;
+    height: 5px;
+    margin-bottom: 3px;
+}
+
+/*Degradê utilizado como plano de fundo:*/
+.degrade {
+    background-image: linear-gradient(
+        #FFB6C1 15%,
+        #fdc3cc 50%,
+        #fbdfe3 70%,
+        white
+    );
+}
+
+/*Estilização de H1 utilizada nos títulos:*/
+.h1-welcome {
+    font-weight: bold;
+    font-size: 50px;
+    color: black; 
+    margin-top: 100px;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(117, 117, 117, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(139, 139, 139, 0.5));
+    transition: all 0.5s;
+    cursor: pointer;   
+}
+
+/*Hover do H1 utilizado nos títulos:*/
+.h1-welcome:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Estilização de H1 utilizado no login:*/
+.h1-login {
+    font-weight: bold;
+    font-size: 50px;
+    color: black; 
+    margin-top: -20px;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(117, 117, 117, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(139, 139, 139, 0.5));
+    transition: all 0.5s;
+    cursor: pointer;   
+}
+
+/*Hover do H1 utilizado no login*/
+.h1-login:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Estilização H1 utilizada na citação:*/
+.h1-quote {
+    margin-top: 250px-;
+    margin-bottom: 100px;
+    font-size: 45px;
+    color: black; 
+    text-align: center; 
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(164, 162, 162, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(169, 168, 168, 0.5));
+}
+
+/*Hover da citação:*/
+.h1-quote:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+/*Estilização H3 utilizado no footer:*/
+.h3-footer {
+    font-weight: bold;
+    color: black; 
+    text-align: center;  
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(164, 162, 162, 0.5));
+    filter: drop-shadow(15px 10px 5px rgba(169, 168, 168, 0.5)); 
+}
+
+/*Hover do H3 utilizado no footer:*/
+.h3-footer:hover {
+    font-weight: bold;
+    font-size: 30px;
+    color: #e71a87; 
+    text-align: center;   
+}
+
+/*Estilização da fonte utilizada nos textos iniciais das páginas:*/
+.p-welcome {
+    font-size: 30px;
+    color: black; 
+    text-align: justify;
+}
+
+/*Estilização da fonte utilizada no texto de acessar materiais:*/
+.p-jobs {
+    font-size: 30px;
+    color: black; 
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/*Estilização da fonte utilizada nos textos do footer da página para contatos e desenvolvedores:*/
+.p-footer {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+/*Estilização do link presente no footer:*/
+.a-footer {
+    text-decoration: none;
+    color: black;    
+}
+
+/*Hover da fonte do texto de contatos e desenvolvedores:*/
+.p-footer:hover{
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-filter: drop-shadow(15px 10px 5px #e73b96);
+    filter: drop-shadow(15px 10px 5px #e13b93);
+}
+
+/*Estilização da fonte utilizada nos textos do footer da página para explanação sobre o que a página se trata:*/
+.p-footer-about {
+    text-align: justify;
+    font-size: 17px;
+    color: black;
+}
+
+/*Hover da fonte do texto sobre o que a página se trata:*/
+.p-footer-about:hover{
+    font-weight: bold;
+}
+
+/*Estilização do copyright do footer:*/
+.p-copyright {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+/*Hover do copyright:*/
+.p-copyright:hover {
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-filter: drop-shadow(15px 10px 5px #5f5f5f);
+    filter: drop-shadow(15px 10px 5px #6e6e6e);    
+}
+
+/*Estilização do botão para acesso à página de materiais:*/
+.button-materials {
+    width: 300px;
+    height: 55px;
+    border-radius: 70px;
+    border: 0px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 150px;
+    background-image: linear-gradient(
+        to right,
+        #e71a87,  
+        #df4095,  
+        #e381b5  
+    );
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Hover  do botão de acesso à página de materiais:*/
+.button-materials:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px #e71a87);
+    filter: drop-shadow(15px 10px 5px #db4997);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*Estilização do botão para acesso à página de materiais:*/
+.button-buy {
+    width: 200px;
+    height: 55px;
+    border-radius: 70px;
+    border: 0px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 35px;
+    background-image: linear-gradient(
+        to right,
+        #e71a87,  
+        #df4095,  
+        #e381b5  
+    );
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Hover  do botão de acesso à página de materiais:*/
+.button-buy:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px #e71a87);
+    filter: drop-shadow(15px 10px 5px #db4997);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*Estilização do botão para acesso ao contato da psicóloga presente na Home:*/
+.button-contact {
+    width: 300px;
+    height: 75px;
+    border-radius: 70px;
+    border: 0px;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    background-image: linear-gradient(
+        to right,
+        #e71a87,  
+        #df4095,  
+        #e381b5  
+    );
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Hover do botão de acesso ao contato da psicóloga na página Home:*/
+.button-contact:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px #e71a87);
+    filter: drop-shadow(15px 10px 5px #db4997);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}   
+
+/*Estilização do botão para acesso ao contato da psicóloga presente na página Sobre:*/
+.button-contact-two {
+    width: 75px;
+    height: 75px;
+    border-radius: 70px;
+    border: 0px;
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    margin-right: 25px;
+    background-image: linear-gradient(
+        to right,
+        #e71a87,  
+        #df4095,  
+        #e381b5  
+    );
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Hover do botão de acesso ao contato da psicóloga na página Sobre:*/
+.button-contact-two:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px #e71a87);
+    filter: drop-shadow(15px 10px 5px #db4997);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+} 
+
+/*Estilização do botão de login:*/
+.button-login {
+    width: 100px;
+    height: 45px;
+    border-radius: 70px;
+    border: 0px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+    font-weight: bold;
+    margin-right: 25px;
+    background-image: linear-gradient(
+        to right,
+        #e71a87,  
+        #df4095,  
+        #e381b5  
+    );
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Hover do botão de login:*/
+.button-login:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px #e71a87);
+    filter: drop-shadow(15px 10px 5px #db4997);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.a-btn {
+    text-decoration: none;  
+}
+
+/*Detalhes do plano de fundo da página Home:*/
+.back-flower {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -300px;
+}
+
+/*Degradê e detalhes do plano de fundo das páginas Materiais e Sobre:*/
+.back {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -300px;
+    background-image: linear-gradient(
+        white 15%, 
+        #fbdfe3 50%,
+        #fdc3cc 70%, 
+        #FFB6C1
+    );    
+}
+
+/*Estilização das ondas em movimento do footer:*/
+.wave{
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 200%;
+    background-position: 0 bottom;
+    background-repeat: repeat-x;
+    transform-origin: center bottom;
+}
+
+/*Transformação das ondas do footer:*/
+@keyframes waves{
+    0%{transform: translateX(0) translateZ(0) scaleY(1);}
+    0%{transform: translateX(-25%) translateZ(0) scaleY(.5);}
+    0%{transform: translateX(-50%) translateZ(0) scaleY(1);}
+}
+
+/*Estilização do botão utilizado na página Materiais:*/
+.btn-wrap {
+    padding-bottom: 30px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+/*Estilização dos cards de produtos na página Materiais:*/
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(12px 7px 3px rgba(86, 86, 86, 0.5));
+    filter: drop-shadow(12px 7px 3px rgba(91, 91, 91, 0.5));
+}
+
+.card:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);    
+}
+
+
+/*Estilização de detalhes do accordion na página Materiais:*/
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+/**Estilização dos botões usados na página Materiais:*/
+.button1 {
+    width: 200px;
+    height: 55px;
+    border-radius: 70px;
+    border: 0px;
+    font-size: 23px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right,
+            #e71a87 25%,
+            #df4095 50%,
+            #e381b5);
+}
+
+/**Estilização dos botões usados na página Materiais:*/
+@media (max-width: 990px) {
+    .button1 {
+        width: 125px;
+        height: 55px;
+        border-radius: 70px;
+        border: 0px;
+        font-size: 20px;
+        margin-top: 30px;
+
+        background-image: linear-gradient(to right,
+                #e71a87,
+                #df4095,
+                #e381b5);
+    }
+}
+
+/*Hover dos botões em Materiais*/
+.button1:hover{
+    font-weight: bold;
+    -webkit-filter: drop-shadow(15px 10px 5px #e71a87);
+    filter: drop-shadow(15px 10px 5px #db4997);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*Estilização da logo da página:*/
+.logo{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/*Hover da logo:*/
+.logo:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Estilização da borboleta presente na Index:*/
+.butterfly{
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/*Hover da borboleta da Index:*/
+.butterfly:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px #e71a87);
+    filter: drop-shadow(15px 10px 5px #e71a87);
+}
+
+/*Estilização das polaroids presentes na página Sobre:*/
+.polaroid {
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));    
+}
+
+/*Hover das polaroids:*/
+.polaroid:hover{
+    -webkit-filter: drop-shadow(25px 20px 15px #e478b2);
+    filter: drop-shadow(25px 20px 15px #e478b2); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);    
+}
+
+/*Estilização da parte do material página detalhes dos materiais*/
+.back-material {
+    background-color: white;
+    padding: 80px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 15px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 15px rgba(0,0,0,.5));    
+}
+
+/*Hover da parte do material página detalhes dos materiais*/
+.back-material:hover {
+    -webkit-filter: drop-shadow(15px 10px 15px #e71a87);
+    filter: drop-shadow(15px 10px 5px #e71a87);    
+}
+
+.material {
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(15px 10px 15px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 15px rgba(0,0,0,.5));       
+}
+
+.material:hover {
+    -webkit-filter: drop-shadow(15px 10px 15px #e71a87);
+    filter: drop-shadow(15px 10px 5px #e71a87);    
+}
+
+.justify-text {
+    text-align: left;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+ 
